@@ -1,0 +1,866 @@
+body {
+  margin: 0px;
+  padding: 0px;
+  height: 100vh;
+  width: 100%;
+  background: url("AOT Photos/mikasa.png")
+    fixed center;
+}
+*{
+  list-style: none;
+  text-decoration: none;
+}
+
+header{
+  text-align: center;
+  z-index: 1;
+  top: 170px;
+  left: 15px;
+  position: relative;
+}
+header.sticky{
+  top: 10px;
+  position: fixed;
+  left: 565px;
+  z-index: 2;
+
+}
+.nav{
+  display: inline-flex;
+  position: relative;
+  overflow: hidden;
+  max-width: 100%;
+  background-color: #18181a;
+  padding: 0 20px;
+  border-radius: 5px;
+  box-shadow: 0 10px 50px rgba(150,172,177,0.8);
+  box-sizing: border-box;
+
+}
+
+.nav-item{
+position: relative;
+display: inline-block;
+padding: 15px 20px 15px 25px;
+color: white;
+text-transform: uppercase;
+letter-spacing: 4px;
+text-decoration: none;
+font-size: 14px;
+overflow: hidden;
+transition: 0.2s;
+border-radius: 0px;
+font-family: 'Della Respira', serif;
+}
+
+.nav-item::before{
+content: "";
+position: absolute;
+bottom: -7px;
+left: 0;
+width: 100%;
+height: 5px;
+background-color: #650000;
+border-radius: 8px 8px 0 0;
+opacity: 0;
+transition: 0.3s;
+}
+
+
+.nav-item:not(.is-active):hover:before{
+opacity: 1;
+bottom; 0;
+}
+.nav-item:not(.is-active):hover{
+color: white;
+background: #650000;
+box-shadow: 0 0 10px #650000, 0 0 10px #650000, 0 0 10px #650000, 0 0 10px #650000, 0 0 50px #650000 ;
+}
+
+
+/*----------------------------*/
+.showcase {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+.scvideo {
+  position: absolute;
+  min-width: 100%;
+  min-height: 100%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+}
+.showcase img {
+  z-index: 1;
+  height:350px;
+  position: absolute;
+  top: 250px;
+  left: 525px;
+}
+
+.showcase a{
+  text-decoration: none;
+}
+
+.navcontainer{
+
+}
+
+ .s1btn .watchs1, .s3btn .watchs3, .s2btn .watchs2, .s4btn .watchs4{
+  position: relative;
+  padding: 10px 30px;
+  margin: 0 15px;
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 15px;
+  overflow: hidden;
+  transition: 0.5s;
+  font-family: 'Della Respira', serif;
+}
+.s1btn .watchs1:hover,.s3btn .watchs3:hover, .s2btn .watchs2:hover,.s4btn .watchs4:hover
+{
+  background: #650000;
+  color: white;
+  box-shadow: 0 0 50px #650000;
+}
+ .s1btn .watchs1:before, .s3btn .watchs3:before, .s2btn .watchs2:before, .s4btn .watchs4:before
+{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 10px;
+  height: 10px;
+  border-top: 3px solid #650000;
+  border-left: 3px solid #650000;
+  transition: 0.5s;
+}
+ .s1btn .watchs1:hover:before, .s3btn .watchs3:hover:before, .s2btn .watchs2:hover:before, .s4btn .watchs4:hover:before
+{
+  width: 98%;
+  height: 98%;
+}
+ .s1btn .watchs1:after, .s3btn .watchs3:after, .s2btn .watchs2:after, .s4btn .watchs4:after{
+  content: '';
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 10px;
+  height: 10px;
+  border-bottom: 3px solid #650000;
+  border-right: 3px solid #650000;
+  transition: 0.5s;
+
+}
+ .s1btn .watchs1:hover:after, .s3btn .watchs3:hover:after, .s2btn .watchs2:hover:after, .s4btn .watchs4:hover:after
+{
+  width: 98%;
+  height: 98%;
+}
+
+/*Seasons CSS-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+#seasons{
+  margin: 0px;
+  padding-top: 100px;
+
+}
+.sheader{
+  padding-bottom: 50px;
+  text-align: center;
+  font-family: 'Della Respira', serif;
+  font-size: 50px;
+  margin: 0px 0px;
+
+}
+.trailer1{
+  height: 300px;
+  width: 1700px;
+  position: relative;
+  margin: 0px 100px 100px 100px;
+  padding: 50px 0px;
+  border-style: solid;
+  border-radius: 5px;
+
+
+}
+.s1img{
+  width: 500px;
+  height: 300px;
+  position: absolute;
+  left: 50px;
+  border-radius: 5px;
+  border: solid;
+}
+
+.s1vid{
+  width:500px;
+  height: 300px;
+  position:absolute;
+  left: 50px;
+  transition:0.3s;
+  z-index: 1;
+  object-fit: cover;
+  opacity: 0.0;
+  border-radius: 5px;
+}
+
+.s1vid:hover{
+  transform: scale(1.55);
+  opacity: 1.0;
+}
+
+.h1s1{
+  position: absolute;
+  left: 600px;
+  top: 25px;
+  z-index: 0;
+  font-family: 'Della Respira', serif;
+  text-decoration: underline;
+}
+
+.s11{
+  position: absolute;
+  left: 600px;
+  top: 6em;
+  z-index: 0;
+  font-family: 'Della Respira', serif;
+  margin: 0px;
+  font-size: 16px;
+  width: 1050px;
+  line-height: 1em;
+  font-size: 17px;
+}
+.s12{
+  position: absolute;
+  margin: 0px;
+  left: 600px;
+  top: 11em;
+  z-index: 0;
+  font-family: 'Della Respira', serif;
+  width: 1050px;
+  line-height: 1em;
+  font-size: 17px;
+}
+.s13{
+  position: absolute;
+  margin: 0px;
+  left: 600px;
+  top: 14em;
+  z-index: 0;
+  font-family: 'Della Respira', serif;
+  width: 1050px;
+  line-height: 1em;
+  font-size: 17px;
+}
+
+.s1btn .watchs1, .s3btn .watchs3{
+  position: absolute;
+  right: 70px;
+  bottom: 30px;
+  z-index: 0;
+  font-family: 'Della Respira', serif;
+  width: 200px;
+  height: 50px;
+  border: none;
+  border-radius:3px;
+  background: none;
+  outline: none;
+  font-size: 17px;
+  color: black;
+  cursor: pointer;
+}
+
+.s2btn .watchs2, .s4btn .watchs4{
+  position: absolute;
+  right: 630px;
+  bottom: 30px;
+  font-family: 'Della Respira', serif;
+  z-index: 0;
+  width: 200px;
+  height: 50px;
+  background: none;
+  border-radius: 3px;
+  outline: none;
+  font-size: 17px;
+  color: black;
+  cursor: pointer;
+  border: none;
+}
+
+
+/* Season 2 css */
+
+.trailer2{
+  height: 300px;
+  width: 1700px;
+  position: relative;
+  margin: 100px;
+  padding: 50px 0px;
+  border-style: solid;
+  border-radius: 5px;
+}
+.s2img{
+  width: 500px;
+  height: 300px;
+  position: absolute;
+  right: 50px;
+  border-radius: 5px;
+  border: solid;
+}
+
+.s2vid{
+  width:500px;
+  height: 300px;
+  position:absolute;
+  right: 50px;
+  transition:0.3s;
+  z-index: 1;
+  object-fit: cover;
+  opacity: 0.0;
+  border-radius: 5px;
+}
+
+.s2vid:hover{
+  transform: scale(1.55);
+  opacity: 1.0;
+  z-index: 1;
+}
+
+.h1s2{
+  position: absolute;
+  left: 50px;
+  top: 25px;
+  z-index: 0;
+  font-family: 'Della Respira', serif;
+  text-decoration: underline;
+}
+
+.s21{
+  position: absolute;
+  width: 1050px;
+  left: 50px;
+  top: 6em;
+  z-index: 0;
+  font-family: 'Della Respira', serif;
+  line-height: 1em;
+  margin: 0px;
+  font-size: 17px;
+}
+
+.s22{
+  position: absolute;
+  width: 1050px;
+  left: 50px;
+  top: 10em;
+  z-index: 0;
+  font-family: 'Della Respira', serif;
+  line-height: 1em;
+  margin: 0px;
+  font-size: 17px;
+}
+.s23{
+  position: absolute;
+  width: 1050px;
+  left: 50px;
+  top: 14em;
+  z-index: 0;
+  font-family: 'Della Respira', serif;
+  line-height: 1em;
+  margin: 0px;
+  font-size: 17px;
+}
+
+
+/* Season 3 css */
+
+.trailer3{
+  height: 300px;
+  width: 1700px;
+  position: relative;
+  padding: 50px 0px;
+  border-style: solid;
+  margin: 100px;
+  border-radius: 5px;
+}
+.s3img{
+  width: 500px;
+  height: 300px;
+  position: absolute;
+  left: 50px;
+  border-radius: 5px;
+  border: solid;
+}
+
+.s3vid{
+  width:500px;
+  height: 300px;
+  position:absolute;
+  left: 50px;
+  transition:0.3s;
+  z-index: 1;
+  object-fit: cover;
+  opacity: 0.0;
+  border-radius: 5px;
+}
+
+.s3vid:hover{
+  transform: scale(1.55);
+  opacity: 1.0;
+}
+
+.h1s3{
+  position: absolute;
+  left: 600px;
+  top: 25px;
+  z-index: 0;
+  font-family: 'Della Respira', serif;
+  text-decoration: underline;
+}
+
+.s31{
+  position: absolute;
+  width: 1050px;
+  height: 300px;
+  left: 600px;
+  top: 6em;
+  z-index: 0;
+  font-family: 'Della Respira', serif;
+  line-height: 1em;
+  margin: 0px;
+  font-size: 17px;
+}
+.s32{
+  position: absolute;
+  width: 1050px;
+  height: 300px;
+  left: 600px;
+  top: 10em;
+  z-index: 0;
+  font-family: 'Della Respira', serif;
+  line-height: 1em;
+  margin: 0px;
+  font-size: 17px;
+}
+.s33{
+  position: absolute;
+  width: 1050px;
+  height: 300px;
+  left: 600px;
+  top: 16em;
+  z-index: 0;
+  font-family: 'Della Respira', serif;
+  line-height: 1em;
+  margin: 0px;
+  font-size: 17px;
+}
+
+
+
+/* Season 4 css */
+
+.trailer4{
+  height: 300px;
+  width: 1700px;
+  position: relative;
+  margin: 100px 100px 0px 100px;
+  padding: 50px 0px;
+  border-style: solid;
+  border-radius: 5px;
+}
+.s4img{
+  width: 500px;
+  height: 300px;
+  position: absolute;
+  right: 50px;
+  border-radius: 5px;
+  border: solid;
+}
+
+.s4vid{
+  width:500px;
+  height: 300px;
+  position:absolute;
+  right: 50px;
+  transition:0.3s;
+  z-index: 1;
+  object-fit: cover;
+  opacity: 0.0;
+  border-radius: 5px;
+}
+
+.s4vid:hover{
+  transform: scale(1.55);
+  opacity: 1.0;
+}
+
+.h1s4{
+  position: absolute;
+  left: 50px;
+  top: 25px;
+  z-index: 0;
+  font-family: 'Della Respira', serif;
+  text-decoration: underline;
+}
+
+.s41{
+  position: absolute;
+  width: 1050px;
+  height: 300px;
+  left: 50px;
+  top: 6em;
+  z-index: 0;
+  font-family: 'Della Respira', serif;
+  line-height: 1em;
+  margin: 0px;
+  font-size: 17px;
+}
+.s42{
+  position: absolute;
+  width: 1050px;
+  height: 300px;
+  left: 50px;
+  top: 10em;
+  z-index: 0;
+  font-family: 'Della Respira', serif;
+  line-height: 1em;
+  margin: 0px;
+  font-size: 17px;
+}
+.s43{
+  position: absolute;
+  width: 1050px;
+  height: 300px;
+  left: 50px;
+  top: 13em;
+  z-index: 0;
+  font-family: 'Della Respira', serif;
+  line-height: 1em;
+  margin: 0px;
+  font-size: 17px;
+}
+
+/*Panel CSS----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+#panels{
+  background: url("AOT Photos/mikasa.png")
+    fixed center;
+  padding: 100px 0px 150px 0px;
+}
+.panelheader{
+  text-align: center;
+  margin: 0px;
+  font-size: 50px;
+  font-family: 'Della Respira', serif;
+  padding-bottom: 50px;
+
+}
+.panelcon{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: 220px;
+  grid-row-gap: 1em;
+  margin: 0px 200px 0px 200px;
+
+}
+.panelcon > div{
+  width: 500px;
+  position: relative;
+
+
+
+}
+.panelcon div img{
+  width: 502px;
+  height: 225px;
+  position: absolute;
+}
+
+.top{
+  animation-name: fade;
+	animation-timing-function: ease-in-out;
+	animation-iteration-count: infinite;
+	animation-duration: 10s;
+	animation-direction: alternate;
+  animation-delay: 5s;
+}
+.top2{
+  animation-name: fade;
+	animation-timing-function: ease-in-out;
+	animation-iteration-count: infinite;
+	animation-duration: 10s;
+	animation-direction: alternate;
+
+
+}
+
+@keyframes fade {
+  0%{
+    opacity: 1;
+  }
+  25%{
+    opacity: 1;
+  }
+  75%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 0;
+  }
+}
+
+
+/*Parallax CSS----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+.parallax{
+  background: url("AOT Photos/parallaximg.png")
+  fixed repeat;
+  margin: 0px;
+}
+
+.parallax-inner{
+  height: 500px;
+}
+
+/*ODM CSS---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+#ODM{
+  background: url("AOT Photos/mikasa.png")
+    fixed center;
+  padding-top: 100px;
+  padding-bottom: 200px;
+
+}
+.ODMheader{
+  color: black;
+  padding-bottom: 50px;
+  text-align: center;
+  position: relative;
+  top: 0px;
+  font-size: 50px;
+  font-family: 'Della Respira', serif;
+  margin:  0px;
+
+}
+.ODMcontainer{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  width: 80%;
+  justify-items: center;
+  align-items: center;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50.5%, -0%);
+  font-family: 'Della Respira', serif;
+
+
+}
+.ODMcontainer >div{
+
+  width: 500px;
+  height: 300px;
+  text-align: center;
+  position: relative;
+}
+.ODMcontainer >div:nth-child(odd){
+
+}
+
+.blades{
+  text-align: center;
+  position: relative;
+}
+.thunderspears{
+  position: relative;
+}
+.grip{
+  position: relative;
+}
+
+
+#ODM h1{
+  position: relative;
+  top: 210px;
+}
+
+.blades p{
+  position: relative;
+  top:200px;
+
+}
+
+.thunderspears p{
+  position: relative;
+  top:200px;
+}
+
+.grip p{
+  position: relative;
+  top:200px;
+}
+
+.housing p{
+  position: relative;
+  top:200px;
+}
+
+.straps p{
+  position: relative;
+  top:200px;
+}
+/* ODM Imgs */
+
+.blades img{
+  position: absolute;
+  right: 30px;
+  width: 450px;
+  height: 220px;
+  top: 20px;
+  transition: .2s;
+}
+.blades img:hover{
+  transform: scale(1.05);
+}
+
+.thunderspears img{
+  position: absolute;
+  right: 25px;
+  top: 0px;
+  height: 256px;
+  transition: .2s;
+}
+.thunderspears img:hover{
+  transform: scale(1.05);
+}
+
+.grip img{
+  position: absolute;
+  top:20px;
+  left: 20px;
+  transition: 0.2s;
+}
+.grip img:hover{
+  transform: scale(1.05);
+}
+.straps img{
+  position: absolute;
+  left: 150px;
+  top: 0px;
+  height: 325px;
+  transition: 0.2s;
+}
+.straps img:hover{
+  transform: scale(1.05);
+}
+.housing img{
+  position: absolute;
+  top:20px;
+  left: 25px;
+  transition: 0.2s;
+}
+.housing img:hover{
+  transform: scale(1.05);
+}
+
+/* Footer ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+#footer{
+  width: 100%;
+  display: block;
+  overflow: hidden;
+  padding: 10px 0px 70px 0px;
+  box-sizing: border-box;
+  background-color: #18181a;
+
+}
+
+.inner_footer{
+  display: block;
+  margin: 0 auto;
+  width: 1500px;
+  height: 100%;
+  position: relative;
+}
+.inner_footer .logo_container{
+  width: 35%;
+  float: left;
+  display: block;
+  height: 100%;
+}
+.inner_footer .logo_container img{
+  width: 80px;
+  height: auto;
+  position: relative;
+  top: 20px;
+
+}
+.thirdsdiv{
+  position: relative;
+  left: 41px;
+}
+.inner_footer .footer_third{
+  width: calc(20%-20px);
+  margin-right: 40px;
+  float: left;
+  height: 100%;
+}
+
+.inner_footer .footer_third :last-child{
+  margin-right: 0;
+}
+
+.inner_footer .footer_third h1{
+  font-family: 'Della Respira', serif;
+  font-size: 22px;
+  color: white;
+  display: block;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.inner_footer .footer_third a{
+  font-family: 'Della Respira', serif;
+  font-size: 18px;
+  font-weight: 200px;
+  color: white;
+  display: block;
+  width: 100%;
+  padding-bottom: 5px;
+}
+.inner_footer .footer_thrid li{
+  display: inline-block;
+  padding: 0 5px;
+  font-size: 20px;
+}
+
+.media{
+  position: absolute;
+  right: 0px;
+  top: 15px;
+
+}
+
+.media li{
+  color: white;
+  margin: 10px;
+
+}
+
+.media ul :first-child{
+  margin-top: 0px;
+}
+
+.copyright{
+  color: grey;
+  position: relative;
+  top: 185px;
+  right: 305px;
+}
